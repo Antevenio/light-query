@@ -1,0 +1,15 @@
+{
+    "name": "pinfake/mysql-query-omen",
+    "description": "Analyze mysql queries prior to execution and reject those who are considered to be harmful (take too long to complete)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iván Mota",
+            "email": "pinfake@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"LightQuery\\": "src/"}
+    }
+}
