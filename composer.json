@@ -1,5 +1,5 @@
 {
-    "name": "pinfake/mysql-query-omen",
+    "name": "pinfake/light-query",
     "description": "Analyze mysql queries prior to execution and reject those who are considered to be harmful (take too long to complete)",
     "license": "MIT",
     "authors": [
