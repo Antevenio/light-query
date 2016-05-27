@@ -1,5 +1,5 @@
 {
-    "name": "pinfake/light-query",
+    "name": "Antevenio/light-query",
     "description": "Analyze mysql queries prior to execution and reject those who are considered to be harmful (take too long to complete)",
     "license": "MIT",
     "authors": [
@@ -8,7 +8,15 @@
             "email": "pinfake@hotmail.com"
         }
     ],
-    "require": {},
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Antevenio/light-query.git"
+        }
+    ],
+    "require": {
+        "Antevenio/query-weight": "master"
+    },
     "autoload": {
         "psr-4": {"LightQuery\\": "src/"}
     }
