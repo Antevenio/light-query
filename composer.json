@@ -11,11 +11,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Antevenio/light-query.git"
+            "url": "https://github.com/Antevenio/query-weight.git"
         }
     ],
     "require": {
-        "Antevenio/query-weight": "master"
+        "Antevenio/query-weight": "0.0.1"
     },
     "autoload": {
         "psr-4": {"LightQuery\\": "src/"}
