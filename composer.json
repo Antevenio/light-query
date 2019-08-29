@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "Antevenio/query-weight": "0.0.1"
+        "Antevenio/query-weight": "^0.2",
+        "ext-PDO": "1.0.4dev"
     },
     "autoload": {
         "psr-4": {"LightQuery\\": "src/"}
