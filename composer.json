@@ -1,5 +1,5 @@
 {
-    "name": "Antevenio/light-query",
+    "name": "antevenio/light-query",
     "description": "Analyze mysql queries prior to execution and reject those who are considered to be harmful (take too long to complete)",
     "license": "MIT",
     "authors": [
@@ -16,7 +16,7 @@
     ],
     "require": {
         "Antevenio/query-weight": "^0.2",
-        "ext-PDO": "1.0.4dev"
+        "ext-PDO": "*"
     },
     "autoload": {
         "psr-4": {"LightQuery\\": "src/"}
