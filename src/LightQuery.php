@@ -29,10 +29,11 @@ class LightQuery
      * @throws HeavyQueryException
      * @throws \QueryWeight\UnexplainableQueryException
      */
-    public function query($query) {
-        $rowsToCompute = $this->queryWeight->getQueryWeight($query);
-        if ($rowsToCompute > $this->maxRowsToCompute) {
-            throw new HeavyQueryException();
+    public function query($query)
+    {
+        $explainPlan = $this->queryWeight->getExecutionPlan($query);
+        if ($explainPlan->getComputableRows() > $this->maxRowsToCompute) {
+            throw (new HeavyQueryException())->setExplainPlan($explainPlan);
         } else {
             return ($this->pdo->query($query, \PDO::FETCH_ASSOC));
         }

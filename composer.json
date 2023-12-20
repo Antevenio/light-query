@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "antevenio/query-weight": "^0.3.1",
+        "antevenio/query-weight": "^0.3.2",
         "ext-PDO": "*"
     },
     "autoload": {
